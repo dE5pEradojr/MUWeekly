@@ -8,30 +8,28 @@
 
 import UIKit
 
-class LecturesViewController: UIViewController {
+class LecturesViewController: UITableViewController {
                             
-    
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        loginButton.setTitle("Войти", forState:.Normal)
+       
+        //if user.loggedIn != true {}
+        //auth
+        let navAuthentication:UINavigationController = UIStoryboard(name: "Authentication", bundle: nil)
+            .instantiateInitialViewController() as UINavigationController
+        
+        
+        presentViewController(navAuthentication, animated: true, completion: nil)
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
-    @IBAction func loginAction(sender: UIButton) {
-        
-        println("Логин: \(loginTextField.text), пароль: \(passwordTextField.text)")
-        
-            }
-
+    
 }
 

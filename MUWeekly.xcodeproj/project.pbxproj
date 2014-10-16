@@ -12,6 +12,8 @@
 		3746B00D19EFB8F200CFB3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746B00B19EFB8F200CFB3CE /* Main.storyboard */; };
 		3746B00F19EFB8F200CFB3CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746B00E19EFB8F200CFB3CE /* Images.xcassets */; };
 		3746B01B19EFB8F200CFB3CE /* MUWeeklyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746B01A19EFB8F200CFB3CE /* MUWeeklyTests.swift */; };
+		3746B02519EFFD0800CFB3CE /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746B02419EFFD0800CFB3CE /* Authentication.storyboard */; };
+		3746B02A19F008B500CFB3CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746B02919F008B500CFB3CE /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		3746B01419EFB8F200CFB3CE /* MUWeeklyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUWeeklyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3746B01919EFB8F200CFB3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3746B01A19EFB8F200CFB3CE /* MUWeeklyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUWeeklyTests.swift; sourceTree = "<group>"; };
+		3746B02419EFFD0800CFB3CE /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		3746B02919F008B500CFB3CE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +79,10 @@
 		3746B00419EFB8F200CFB3CE /* MUWeekly */ = {
 			isa = PBXGroup;
 			children = (
+				3746B02819F007FB00CFB3CE /* UI */,
+				3746B02619F007BE00CFB3CE /* Controller */,
+				3746B02719F007D700CFB3CE /* Model */,
 				3746B00719EFB8F200CFB3CE /* AppDelegate.swift */,
-				3746B00919EFB8F200CFB3CE /* LecturesViewController.swift */,
-				3746B00B19EFB8F200CFB3CE /* Main.storyboard */,
 				3746B00E19EFB8F200CFB3CE /* Images.xcassets */,
 				3746B00519EFB8F200CFB3CE /* Supporting Files */,
 			);
@@ -107,6 +112,31 @@
 				3746B01919EFB8F200CFB3CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3746B02619F007BE00CFB3CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3746B00919EFB8F200CFB3CE /* LecturesViewController.swift */,
+				3746B02919F008B500CFB3CE /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3746B02719F007D700CFB3CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3746B02819F007FB00CFB3CE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3746B00B19EFB8F200CFB3CE /* Main.storyboard */,
+				3746B02419EFFD0800CFB3CE /* Authentication.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +221,7 @@
 			files = (
 				3746B00D19EFB8F200CFB3CE /* Main.storyboard in Resources */,
 				3746B00F19EFB8F200CFB3CE /* Images.xcassets in Resources */,
+				3746B02519EFFD0800CFB3CE /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3746B02A19F008B500CFB3CE /* LoginViewController.swift in Sources */,
 				3746B00A19EFB8F200CFB3CE /* LecturesViewController.swift in Sources */,
 				3746B00819EFB8F200CFB3CE /* AppDelegate.swift in Sources */,
 			);
@@ -326,8 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MUWeekly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -337,8 +371,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MUWeekly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -395,6 +431,7 @@
 				3746B02019EFB8F200CFB3CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3746B02119EFB8F200CFB3CE /* Build configuration list for PBXNativeTarget "MUWeeklyTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +440,7 @@
 				3746B02319EFB8F200CFB3CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
