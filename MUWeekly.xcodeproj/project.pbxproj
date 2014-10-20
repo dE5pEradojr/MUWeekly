@@ -14,6 +14,8 @@
 		3746B01B19EFB8F200CFB3CE /* MUWeeklyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746B01A19EFB8F200CFB3CE /* MUWeeklyTests.swift */; };
 		3746B02519EFFD0800CFB3CE /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746B02419EFFD0800CFB3CE /* Authentication.storyboard */; };
 		3746B02A19F008B500CFB3CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746B02919F008B500CFB3CE /* LoginViewController.swift */; };
+		377C3EA119F518B000D79E53 /* LectureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377C3EA019F518B000D79E53 /* LectureDetailViewController.swift */; };
+		377C3EA319F51EDB00D79E53 /* MUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377C3EA219F51EDB00D79E53 /* MUApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		3746B01A19EFB8F200CFB3CE /* MUWeeklyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUWeeklyTests.swift; sourceTree = "<group>"; };
 		3746B02419EFFD0800CFB3CE /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		3746B02919F008B500CFB3CE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		377C3EA019F518B000D79E53 /* LectureDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureDetailViewController.swift; path = Controllers/LectureDetailViewController.swift; sourceTree = "<group>"; };
+		377C3EA219F51EDB00D79E53 /* MUApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MUApi.swift; path = Model/MUApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		3746B02619F007BE00CFB3CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				377C3EA019F518B000D79E53 /* LectureDetailViewController.swift */,
 				3746B00919EFB8F200CFB3CE /* LecturesViewController.swift */,
 				3746B02919F008B500CFB3CE /* LoginViewController.swift */,
 			);
@@ -126,6 +131,7 @@
 		3746B02719F007D700CFB3CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				377C3EA219F51EDB00D79E53 /* MUApi.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -241,6 +247,8 @@
 			files = (
 				3746B02A19F008B500CFB3CE /* LoginViewController.swift in Sources */,
 				3746B00A19EFB8F200CFB3CE /* LecturesViewController.swift in Sources */,
+				377C3EA119F518B000D79E53 /* LectureDetailViewController.swift in Sources */,
+				377C3EA319F51EDB00D79E53 /* MUApi.swift in Sources */,
 				3746B00819EFB8F200CFB3CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
