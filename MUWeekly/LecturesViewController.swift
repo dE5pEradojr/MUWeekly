@@ -15,13 +15,15 @@ class LecturesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        
+        var lectures = MUApi.sharedInstance().getLectures()
+        
+        
         //if user.loggedIn != true {}
         //auth
-        let navAuthentication:UINavigationController = UIStoryboard(name: "Authentication", bundle: nil)
-            .instantiateInitialViewController() as UINavigationController
-        
-        
-        presentViewController(navAuthentication, animated: true, completion: nil)
+//        let navAuthentication:UINavigationController = UIStoryboard(name: "Authentication", bundle: nil)
+//            .instantiateInitialViewController() as UINavigationController
+//         presentViewController(navAuthentication, animated: true, completion: nil)
     
     }
 
